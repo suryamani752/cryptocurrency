@@ -16,7 +16,7 @@ const Layout = ({ children }) => {
         <div className="py-2 relative">
           <i className="ri-search-line absolute top-6 px-2 text-2xl text-gray-400"></i>
           <input
-            className="text-2xl rounded-[10px] px-10 py-3 focus:outline-none focus:caret-green-500"
+            className="text-2xl rounded-[10px] lg:pr-10 lg:pl-10 pr-0 pl-10 py-3 focus:outline-none focus:caret-green-500"
             type="text"
             placeholder="Enter desired currency...."
             onChange={(e) => setSearch(e.target.value)}
