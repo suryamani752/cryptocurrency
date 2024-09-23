@@ -28,7 +28,7 @@ const Layout = ({ children }) => {
       {/* Check if no filtered coins are found and display an error in the center */}
       {filteredCoin.length === 0 && search && (
         <div className="flex justify-center items-center h-screen">
-          <p className="text-2xl text-red-500">
+          <p className="text-2xl text-red-500 text-center">
             No cryptocurrency found with the name "{search}"
           </p>
         </div>
