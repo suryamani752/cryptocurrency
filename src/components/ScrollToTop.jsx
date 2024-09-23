@@ -24,7 +24,7 @@ const ScrollToTop = () => {
     <div className="relative">
       {scrollToTop && (
         <FaAngleUp
-          className="fixed bottom-10 right-6 z-20 text-4xl cursor-pointer rounded-full bg-gradient-to-r from-cyan-500 to-blue-500"
+          className="fixed bottom-10 right-6 z-20 lg:text-4xl text-5xl cursor-pointer rounded-full bg-gradient-to-r from-cyan-500 to-blue-500"
           onClick={goTotop}
         />
       )}
