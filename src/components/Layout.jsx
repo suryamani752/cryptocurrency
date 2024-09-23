@@ -1,9 +1,10 @@
 import React, { useContext } from "react";
 import { CryptoContext } from "../context/CryptoContext";
 import { Link } from "react-router-dom";
+import Footer from "./Footer";
 
 const Layout = ({ children }) => {
-  const { setSearch, search, filteredCoin } = useContext(CryptoContext); 
+  const { setSearch, search, filteredCoin } = useContext(CryptoContext);
 
   return (
     <>
@@ -20,7 +21,7 @@ const Layout = ({ children }) => {
             type="text"
             placeholder="Enter desired currency...."
             onChange={(e) => setSearch(e.target.value)}
-            value={search} 
+            value={search}
           />
         </div>
       </div>
@@ -34,6 +35,7 @@ const Layout = ({ children }) => {
         </div>
       )}
       {children}
+      <Footer />
     </>
   );
 };
